@@ -1,21 +1,21 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header{
+header {
   height: 50px;
   background-color: #ff9a4b;
 }
 
-main{
+main {
   width: 960px;
   margin: 50px auto;
   display: flex;
 }
 
-.step{
+.step {
   width: 300px;
   background-color: #eeeeee;
   margin-right: 30px;
@@ -23,32 +23,32 @@ main{
   padding: 10px;
 }
 
-.step:last-child{
+.step:last-child {
   margin-right: 0;
 }
 
-.img1{
+.img1 {
   background-image: url(1-10課題img/flow01.png);
   background-size: cover;
   background-position: bottom;
   height: 150px;
 }
 
-.img2{
+.img2 {
   background-image: url(1-10課題img/flow02.png);
   background-size: cover;
   height: 150px;
   background-position: bottom;
 }
 
-.img3{
+.img3 {
   background-image: url(1-10課題img/flow03.png);
   background-size: cover;
   height: 150px;
   background-position: bottom;
 }
 
-.head{
+.head {
   position: absolute;
   top: 0;
   left: 0;
@@ -56,7 +56,34 @@ main{
   color: #fff;
 }
 
-footer{
+footer {
   height: 50px;
   background-color: #aaaaaa;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .step {
+    width: 90%;
+  }
+
+  .step:first-child {
+    margin: 50px auto 20px;
+  }
+
+  .step:nth-child(2) {
+    margin: 0 auto;
+  }
+
+  .step:last-child {
+    margin: 20px auto 50px;
+  }
 }
